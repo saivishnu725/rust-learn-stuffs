@@ -5,7 +5,7 @@ fn main() {
     // println!("Function = {}", _func(10, 20));
     // _cond_if();
     // _cond_inf_loop();
-
+    _cond_loop();
 }
 
 // Tuples
@@ -50,7 +50,19 @@ fn _cond_if() {
 fn _cond_inf_loop() {
     let mut a = 0;
     loop {
-        println!("a = {}", a);
+        println!("{}\n", a);
         a += 1;
     }
+}
+// Loop
+fn _cond_loop() {
+    let mut a = 0;
+    let b = loop {
+        println!("a = {}", a);
+        a += 1;
+        if a > 10 {
+            break a;
+        }
+    };
+    println!("\nB = {}", b);
 }
