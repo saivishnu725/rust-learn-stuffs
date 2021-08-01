@@ -83,4 +83,7 @@ fn _cond_for_arrays() {
     for e in a.iter() {
         println!("e = {}", e);
     }
+    for number in (1..10).rev() {
+        println!("Number = {}", number);
+    }
 }
