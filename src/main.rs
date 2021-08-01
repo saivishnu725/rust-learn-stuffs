@@ -5,7 +5,8 @@ fn main() {
     // println!("Function = {}", _func(10, 20));
     // _cond_if();
     // _cond_inf_loop();
-    _cond_loop();
+    // _cond_loop();
+    _cond_while();
 }
 
 // Tuples
@@ -65,4 +66,13 @@ fn _cond_loop() {
         }
     };
     println!("\nB = {}", b);
+}
+// While
+fn _cond_while() {
+    let a = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+    let mut l = 0;
+    while l < 10 {
+        println!("Value at index {} = {}", l, a[l]);
+        l += 1;
+    }
 }
