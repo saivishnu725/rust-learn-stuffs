@@ -4,7 +4,8 @@ fn main() {
     // _variables();
     // println!("Function = {}", _func(10, 20));
     // _cond_if();
-    _cond_inf_loop();
+    // _cond_inf_loop();
+
 }
 
 // Tuples
@@ -45,7 +46,7 @@ fn _cond_if() {
         println!("More than five");
     }
 }
-// Loop
+// Infinite / Recursive Loop
 fn _cond_inf_loop() {
     let mut a = 0;
     loop {
