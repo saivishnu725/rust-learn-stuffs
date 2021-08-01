@@ -3,7 +3,8 @@ fn main() {
     // _arrays();
     // _variables();
     // println!("Function = {}", _func(10, 20));
-    _cond_if();
+    // _cond_if();
+    _cond_inf_loop();
 }
 
 // Tuples
@@ -42,5 +43,13 @@ fn _cond_if() {
         println!("Less than five");
     } else {
         println!("More than five");
+    }
+}
+// Loop
+fn _cond_inf_loop() {
+    let mut a = 0;
+    loop {
+        println!("a = {}", a);
+        a += 1;
     }
 }
