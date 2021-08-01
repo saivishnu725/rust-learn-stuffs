@@ -14,5 +14,10 @@ fn main() {
     let ar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
     println!("ar = {}", ar[1]);
     let _ar1: [i32; 5] = [1, 2, 3, 4, 5];
-    
+    func(10, 20);
+}
+
+fn func(x: i32, y: i32) {
+    println!("x = {}", x);
+    println!("y = {}", y);
 }
