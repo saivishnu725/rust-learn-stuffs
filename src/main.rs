@@ -6,7 +6,8 @@ fn main() {
     // _cond_if();
     // _cond_inf_loop();
     // _cond_loop();
-    _cond_while();
+    // _cond_while();
+    _cond_for_arrays();
 }
 
 // Tuples
@@ -74,5 +75,12 @@ fn _cond_while() {
     while l < 10 {
         println!("Value at index {} = {}", l, a[l]);
         l += 1;
+    }
+}
+// For loop for array
+fn _cond_for_arrays() {
+    let a = [10, 20, 30, 40, 50];
+    for e in a.iter() {
+        println!("e = {}", e);
     }
 }
